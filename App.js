@@ -1,13 +1,15 @@
-import { StatusBar } from "expo-status-bar";
-import { Text, View } from "react-native";
-// import { tw } from "tailwind-rn";
-import { useTailwind } from "tailwind-rn";
+// import tw from "tailwind-react-native-classnames";
+import StackNavigator from "./StackNavigator";
+import { NavigationContainer } from "@react-navigation/native";
+import { AuthProvider } from "./hooks/useAuth";
 export default function App() {
-  const tw = useTailwind();
   return (
-    <View style={tw("pt-12 justify-center items-center")}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      {/* Navigaton container is used to wrap the stack navigator */}
+      <AuthProvider>
+        {/* Auth provider is a HOC. it has all authentication process */}
+        <StackNavigator />
+      </AuthProvider>
+    </NavigationContainer>
   );
 }
