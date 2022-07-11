@@ -4,10 +4,11 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import HomeScreen from "./Screens/HomeScreen";
 import ChatScreen from "./Screens/ChatScreen";
 import LoginScreen from "./Screens/LoginScreen";
+import useAuth from "./hooks/useAuth";
 const Stack = createNativeStackNavigator();
 const StackNavigator = () => {
   //stack is for navigating between different pages in a react native application.
-  const user = false;
+  const { user } = useAuth();
   return (
     <Stack.Navigator>
       {user ? (
