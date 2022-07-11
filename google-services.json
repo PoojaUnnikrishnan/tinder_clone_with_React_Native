@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "589883946267",
+    "project_id": "tinder-app-c80c3",
+    "storage_bucket": "tinder-app-c80c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:589883946267:android:aeb554888391c4a8350fbe",
+        "android_client_info": {
+          "package_name": "host.exp.exponent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "589883946267-0fr67ri79l4al9eo58809adg2ksophuu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEfAGhfPQRizvoIx3Y3jhp3iZjc9_IGqc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "589883946267-0fr67ri79l4al9eo58809adg2ksophuu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "589883946267-8taps0ahhpcqsunaqf27sbkf30nk2ojf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "host.expo.exponent"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
