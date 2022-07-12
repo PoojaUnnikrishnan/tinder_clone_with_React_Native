@@ -1,12 +1,15 @@
 import { View, Text } from "react-native";
 import React, { createContext, useContext } from "react";
-
+import * as Google from "expo-google-app-auth";
 const AuthContext = createContext({}); //create data layer, react context API
 
 export const AuthProvider = ({ children }) => {
   //auth provider takes children which means the child elements.
+  const signInWithGoogle = async () => {
+    await Google.logInAsync();
+  };
   return (
-    <AuthContext.Provider value={{ user: "Pooja" }}>
+    <AuthContext.Provider value={{ user: null }}>
       {children}
     </AuthContext.Provider>
   );
