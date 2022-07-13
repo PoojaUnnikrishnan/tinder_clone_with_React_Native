@@ -1,6 +1,6 @@
 import { View, Text } from "react-native";
 import React, { createContext, useContext } from "react";
-import * as Google from "expo-google-app-auth";
+import * as Google from "expo-google-app-auth"; //for google authentication
 const AuthContext = createContext({}); //create data layer, react context API
 
 export const AuthProvider = ({ children }) => {
